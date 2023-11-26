@@ -1,0 +1,59 @@
+/* MAIN */
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+main div {
+  margin-bottom: 3rem;
+}
+
+/* OTHER */
+
+#hero div {
+  margin: auto 0;
+}
+
+.portrait {
+  max-width: 400px;
+  margin: auto;
+}
+
+/* GRIDS */
+
+.grid_1-1 {
+  display: grid;
+  gap: 1rem 2rem;
+}
+
+.grid_2-1 {
+  display: grid;
+  gap: 1rem 2rem;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  gap: 1rem;
+}
+
+@media (min-width: 800px) {
+  .grid_1-1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid_2-1 {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .grid_1-1-1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .order {
+    order: -1;
+    margin: auto;
+  }
+}
